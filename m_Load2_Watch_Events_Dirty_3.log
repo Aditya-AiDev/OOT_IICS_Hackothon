@@ -1,0 +1,654 @@
+Agent Group Id: 0138JL25000000000002
+Agent Group Name: Aditya
+Agent Name: Aditya
+Agent Id: 0138JL08000000000002
+Task Name: m_Load2_Watch_Events_Dirty
+Task Type: MTT_TEST
+Task Id: 0138JL0Z00000000000N
+Run Id: 3
+Service Id: 2236802
+Started By: aadi2
+Run Context Type: ICS_UI
+03/23/2026 12:02:27 **** Importing Connection: Conn_0138JL0B000000000003 ...
+03/23/2026 12:02:27 **** Importing Source Definition: Watch_Events_Dirty_csv ...
+03/23/2026 12:02:27 **** Importing Target Definition: SYSTEM_STG_WATCH_EVENTS_DIRTY ...
+03/23/2026 12:02:27 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Target Definition  SYSTEM_STG_WATCH_EVENTS_DIRTY...
+    Validating Source Definition  Watch_Events_Dirty_csv...
+03/23/2026 12:02:27 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+03/23/2026 12:02:27 **** Importing Workflow: wf_mtt_0138JL0Z00000000000N ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_0138JL0Z00000000000N > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_0138JL0Z00000000000N].  Starting repository sequence id is [430585906]
+======================================================================
+DIRECTOR> VAR_27085 [2026-03-23 12:02:27.591] Parameter file [D:\z_IICS_secure_____agent\apps\Data_Integration_Server\data\parameters\s_mtt_0138JL0Z00000000000N.param] is opened for [session [wf_mtt_0138JL0Z00000000000N.s_mtt_0138JL0Z00000000000N]].
+DIRECTOR> VAR_27062 [2026-03-23 12:02:27.592] Warning! Cannot find section for worklet [wf_mtt_0138JL0Z00000000000N] and folder [] in parameter file [D:\z_IICS_secure_____agent\apps\Data_Integration_Server\data\parameters\s_mtt_0138JL0Z00000000000N.param].
+DIRECTOR> TM_6014 [2026-03-23 12:02:27.592] Initializing session [s_mtt_0138JL0Z00000000000N] at [Mon Mar 23 12:02:27 2026].
+DIRECTOR> TM_6683 [2026-03-23 12:02:27.592] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2026-03-23 12:02:27.592] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2026-03-23 12:02:27.593] Folder: []
+DIRECTOR> TM_6685 [2026-03-23 12:02:27.593] Workflow: [wf_mtt_0138JL0Z00000000000N] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2026-03-23 12:02:27.593] Operating System Type [NT]
+DIRECTOR> TM_6101 [2026-03-23 12:02:27.593] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2026-03-23 12:02:27.593] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2026-03-23 12:02:27.593] Session [s_mtt_0138JL0Z00000000000N] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2026-03-23 12:02:28.662] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2026-03-23 12:02:28.662] Running Partition Group [1].
+MANAGER> PETL_24000 [2026-03-23 12:02:28.662] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2026-03-23 12:02:28.662] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2026-03-23 12:02:28.662] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2026-03-23 12:02:28.662] Initializing session run.
+MAPPING> PETL_24091 [2026-03-23 12:02:28.663] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2026-03-23 12:02:28.664] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2026-03-23 12:02:28.664] Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6151 [2026-03-23 12:02:28.664] The session sort order is [Binary].
+MAPPING> TM_6185 [2026-03-23 12:02:28.664] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2026-03-23 12:02:28.664] Current Timezone:[UTC +5:30]
+MAPPING> CMN_65111 [2026-03-23 12:02:28.664] Current Process ID:[11568]
+MAPPING> TM_6155 [2026-03-23 12:02:28.664] Using HIGH precision processing.
+MAPPING> TM_6180 [2026-03-23 12:02:28.665] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2026-03-23 12:02:28.665] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2026-03-23 12:02:28.665] DTM error log disabled. 
+MAPPING> TE_7022 [2026-03-23 12:02:28.665] TShmWriter: Initialized
+MAPPING> TM_6007 [2026-03-23 12:02:28.667] DTM initialized successfully for session [s_mtt_0138JL0Z00000000000N]
+DIRECTOR> PETL_24033 [2026-03-23 12:02:28.890] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2026-03-23 12:02:28.890] Starting pre-session tasks. : (Mon Mar 23 12:02:28 2026)
+PRE-SESS> PETL_24091 [2026-03-23 12:02:28.891] Thread [PRE-SESS] has the ID [4].
+PRE-SESS> DBG_21349 [2026-03-23 12:02:28.895] No load constraints for Target [SYSTEM_STG_WATCH_EVENTS_DIRTY]. It does not reference any primary table from the same active source or transaction generator.
+PRE-SESS> DBG_21104 [2026-03-23 12:02:28.895] Determining truncate order for [STG_WATCH_EVENTS_DIRTY] [instance id:2]
+PRE-SESS> DBG_21531 [2026-03-23 12:02:28.895]     Truncate order for [STG_WATCH_EVENTS_DIRTY] [instance id:2] determined successfully
+PRE-SESS> CMN_1021 [2026-03-23 12:02:28.947] Database driver event...
+CMN_1021 [Reading driver properties from : D:\z_IICS_secure_____agent\apps\Data_Integration_Server\75.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=orclp21db;Port=1521;UID=system;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [system]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	21.00.0000 Oracle 21.0.0.0.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+PRE-SESS> WRT_8365 [2026-03-23 12:02:28.948] Starting truncate for target table [SYSTEM.STG_WATCH_EVENTS_DIRTY]. : (Mon Mar 23 12:02:28 2026)
+PRE-SESS> WRT_8451 [2026-03-23 12:02:28.948] Query used for Truncate table [TRUNCATE TABLE SYSTEM.STG_WATCH_EVENTS_DIRTY]
+PRE-SESS> WRT_8022 [2026-03-23 12:02:28.952] Truncate table for table [SYSTEM.STG_WATCH_EVENTS_DIRTY] succeeded. : (Mon Mar 23 12:02:28 2026)
+MANAGER> PETL_24027 [2026-03-23 12:02:29.028] Pre-session task completed successfully. : (Mon Mar 23 12:02:29 2026)
+DIRECTOR> PETL_24006 [2026-03-23 12:02:29.028] Starting data movement.
+MAPPING> TM_6660 [2026-03-23 12:02:29.029] Total Buffer Pool size is 13433584 bytes and Block size is 744088 bytes.
+READER_1_1_1> PETL_24091 [2026-03-23 12:02:29.031] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> DBG_21437 [2026-03-23 12:02:29.033] Reader: Source is a file-based source.
+READER_1_1_1> FR_3118 [2026-03-23 12:02:29.033] source [Source] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> FR_3071 [2026-03-23 12:02:29.033] Maximum Line sequential buffer length is 1802.
+READER_1_1_1> BLKR_16003 [2026-03-23 12:02:29.034] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2026-03-23 12:02:29.034] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2026-03-23 12:02:29.035] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> WRT_8147 [2026-03-23 12:02:29.035] Writer: Target is Database [odbc://dbtype=Oracle;host=localhost;port=1521;database=orclp21db], Type [ODBC], User [system], Bulk Mode [OFF]
+WRITER_1_*_1> CMN_1021 [2026-03-23 12:02:29.087] Database driver event...
+CMN_1021 [Reading driver properties from : D:\z_IICS_secure_____agent\apps\Data_Integration_Server\75.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=orclp21db;Port=1521;UID=system;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [system]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	21.00.0000 Oracle 21.0.0.0.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+WRITER_1_*_1> WRT_8221 [2026-03-23 12:02:29.087] Target database connection [Conn_0138JL0B000000000003] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8461 [2026-03-23 12:02:29.087] The value of flag DTMDisablePartialEORStagingSupport is  [0].
+WRITER_1_*_1> WRT_8397 [2026-03-23 12:02:29.089] Appending output data to file [D:\z_IICS_secure_____agent\apps\Data_Integration_Server\data\error\dt8jZL0mHOegHtmfR6NNMr\Target_output1.bad] (initial size [112]).
+WRITER_1_*_1> WRT_8124 [2026-03-23 12:02:29.089] Target Table STG_WATCH_EVENTS_DIRTY :SQL INSERT statement:
+INSERT INTO SYSTEM.STG_WATCH_EVENTS_DIRTY(EVENT_ID,USER_ID,MOVIE_ID,EVENT_TYPE,EVENT_TIMESTAMP,WATCH_MINUTES,USER_RATING)  VALUES ( ?, ?, ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2026-03-23 12:02:29.089] No column marked as primary key for table [STG_WATCH_EVENTS_DIRTY]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2026-03-23 12:02:29.089] Target connection group #1 consists of target(s) [STG_WATCH_EVENTS_DIRTY]
+WRITER_1_*_1> WRT_8003 [2026-03-23 12:02:29.089] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2026-03-23 12:02:29.089] Reader run started.
+WRITER_1_*_1> WRT_8005 [2026-03-23 12:02:29.089] Writer run started.
+WRITER_1_*_1> WRT_8158 [2026-03-23 12:02:29.089] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Mon Mar 23 12:02:29 2026
+
+Target tables:
+
+     STG_WATCH_EVENTS_DIRTY
+
+
+READER_1_1_1> _3120 [2026-03-23 12:02:29.090] Number of column in metadata are more than source file.
+READER_1_1_1> FR_3076 [2026-03-23 12:02:29.090] Skipped over [1] lines.
+READER_1_1_1> DBG_21430 [2026-03-23 12:02:29.090] Reading data from input source file [D:\z.UseCaseData__...IICS\Hackothon\Watch_Events_Dirty.csv] : (Mon Mar 23 12:02:29 2026)
+READER_1_1_1> BLKR_16019 [2026-03-23 12:02:29.090] Read [418] rows, read [0] error rows for source table [Watch_Events_Dirty_csv] instance name [Watch_Events_Dirty_csv]
+READER_1_1_1> BLKR_16008 [2026-03-23 12:02:29.090] Reader run completed.
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.090] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.090] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.090] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.090] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.090] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.090]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=10 Targ Rowid=10
+  EVENT_ID (EVENT_ID:UniChar.255:): "410"
+  USER_ID (USER_ID:UniChar.255:): "1053"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5061"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "REPLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "76"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.090] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.090] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.090] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.090] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.090] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.090]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=30 Targ Rowid=30
+  EVENT_ID (EVENT_ID:UniChar.255:): "430"
+  USER_ID (USER_ID:UniChar.255:): "1105"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5093"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "RATING"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "68"
+  USER_RATING (USER_RATING:UniChar.255:): "4"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.090] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.090] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.090] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.091] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.091] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.091] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.091]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=50 Targ Rowid=50
+  EVENT_ID (EVENT_ID:UniChar.255:): "450"
+  USER_ID (USER_ID:UniChar.255:): "1017"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5098"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "5"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.091] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.091] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.091] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.091] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.091] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.091]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=69 Targ Rowid=69
+  EVENT_ID (EVENT_ID:UniChar.255:): "469"
+  USER_ID (USER_ID:UniChar.255:): "1088"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5119"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "COMPLETE"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "9"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.091] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.091] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.091] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.091] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.091] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.091]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=90 Targ Rowid=90
+  EVENT_ID (EVENT_ID:UniChar.255:): "490"
+  USER_ID (USER_ID:UniChar.255:): "1032"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5021"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "COMPLETE"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "20"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.091] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.091] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.091] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.091] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.091] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.091]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=109 Targ Rowid=109
+  EVENT_ID (EVENT_ID:UniChar.255:): "509"
+  USER_ID (USER_ID:UniChar.255:): "1106"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5058"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "5"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.091] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.091] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.091] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.091] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.091] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.091]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=129 Targ Rowid=129
+  EVENT_ID (EVENT_ID:UniChar.255:): "529"
+  USER_ID (USER_ID:UniChar.255:): "1061"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5016"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "2"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.091] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.091] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.091] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.091] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.091] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.091] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.091]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=148 Targ Rowid=148
+  EVENT_ID (EVENT_ID:UniChar.255:): "548"
+  USER_ID (USER_ID:UniChar.255:): "1009"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5138"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PAUSE"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "57"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.092] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.092] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.092] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.092] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.092] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.092]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=168 Targ Rowid=168
+  EVENT_ID (EVENT_ID:UniChar.255:): "568"
+  USER_ID (USER_ID:UniChar.255:): "1087"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5065"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "23"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.092] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.092] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.092] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.092] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.092] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.092]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=188 Targ Rowid=188
+  EVENT_ID (EVENT_ID:UniChar.255:): "588"
+  USER_ID (USER_ID:UniChar.255:): "1114"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5039"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PAUSE"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "4"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.092] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.092] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.092] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.092] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.092] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.092]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=209 Targ Rowid=209
+  EVENT_ID (EVENT_ID:UniChar.255:): "609"
+  USER_ID (USER_ID:UniChar.255:): "1120"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5063"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "REPLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "133"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.092] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.092] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.092] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.092] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.092] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.092] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.092]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=228 Targ Rowid=228
+  EVENT_ID (EVENT_ID:UniChar.255:): "628"
+  USER_ID (USER_ID:UniChar.255:): "(NULL)"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5111"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "57"
+  USER_RATING (USER_RATING:UniChar.255:): "6"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.093] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.093] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.093] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.093] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.093] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.093]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=248 Targ Rowid=248
+  EVENT_ID (EVENT_ID:UniChar.255:): "648"
+  USER_ID (USER_ID:UniChar.255:): "1007"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5143"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "61"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.093] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.093] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.093] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.093] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.093] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.093]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=267 Targ Rowid=267
+  EVENT_ID (EVENT_ID:UniChar.255:): "667"
+  USER_ID (USER_ID:UniChar.255:): "1005"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5077"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "32"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.093] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.093] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.093] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.093] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.093] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.093]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=286 Targ Rowid=286
+  EVENT_ID (EVENT_ID:UniChar.255:): "686"
+  USER_ID (USER_ID:UniChar.255:): "1093"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5117"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PAUSE"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "26"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.093] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.093] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.093] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.093] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.093] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.093]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=305 Targ Rowid=305
+  EVENT_ID (EVENT_ID:UniChar.255:): "705"
+  USER_ID (USER_ID:UniChar.255:): "1078"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5051"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "REPLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "17"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.093] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.093] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.093] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.093] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.093] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.093]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=325 Targ Rowid=325
+  EVENT_ID (EVENT_ID:UniChar.255:): "725"
+  USER_ID (USER_ID:UniChar.255:): "1066"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5146"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "UNKNOWN"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "6"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.093] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.093] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.093] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.093] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.093] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.093] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.093]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=345 Targ Rowid=345
+  EVENT_ID (EVENT_ID:UniChar.255:): "745"
+  USER_ID (USER_ID:UniChar.255:): "1033"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5076"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PAUSE"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "36"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.094] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.094] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.094] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.094] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.094] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.094]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=365 Targ Rowid=365
+  EVENT_ID (EVENT_ID:UniChar.255:): "765"
+  USER_ID (USER_ID:UniChar.255:): "1039"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5021"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "44"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.094] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.094] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.094] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.094] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.094] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.094]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=385 Targ Rowid=385
+  EVENT_ID (EVENT_ID:UniChar.255:): "785"
+  USER_ID (USER_ID:UniChar.255:): "1003"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "5020"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "RATING"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "29"
+  USER_RATING (USER_RATING:UniChar.255:): "3"
+)
+
+TRANSF_1_1_1> TE_7007 [2026-03-23 12:02:29.094] Transformation Evaluation Error [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')]
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11132 [2026-03-23 12:02:29.094] Transformation [Expression] had an error evaluating output column [O_EVENT_TIMESTAMP]. Error message is [<<Expression Error>> [TO_DATE]: invalid string for converting to Date
+... t:TO_DATE(u:CONCAT(u:'31-13-2026',u:':00'),u:'MM/DD/YYYY HH24:MI:SS')].
+
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11019 [2026-03-23 12:02:29.094] There is an error in the port [O_EVENT_TIMESTAMP]: The default value for the port is set to: ERROR(<<Expression Error>> [ERROR]: transformation error
+... nl:ERROR(u:'transformation error')).
+TRANSF_1_1_1> CMN_1761 [2026-03-23 12:02:29.094] Timestamp Event: [Mon Mar 23 12:02:29 2026]
+TRANSF_1_1_1> TT_11021 [2026-03-23 12:02:29.094] An error occurred moving data from the transformation Expression: to the transformation IUpdateStrategyNode4.
+TRANSF_1_1_1> DBG_21082 [2026-03-23 12:02:29.094] Expression (Input Group 0):  : Current Input data:
+TRANSF_1_1_1> CMN_1053 [2026-03-23 12:02:29.094]   Input row from Source: Rowdata: ( RowType=0(insert) Src Rowid=404 Targ Rowid=404
+  EVENT_ID (EVENT_ID:UniChar.255:): "804"
+  USER_ID (USER_ID:UniChar.255:): "1047"
+  MOVIE_ID (MOVIE_ID:UniChar.255:): "(NULL)"
+  EVENT_TYPE (EVENT_TYPE:UniChar.255:): "PLAY"
+  EVENT_TIMESTAMP (EVENT_TIMESTAMP:UniChar.255:): "31-13-2026"
+  WATCH_MINUTES (WATCH_MINUTES:UniChar.255:): "149"
+  USER_RATING (USER_RATING:UniChar.255:): "(NULL)"
+)
+
+TRANSF_1_1_1> DBG_21216 [2026-03-23 12:02:29.094] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2026-03-23 12:02:29.094] Start loading table [STG_WATCH_EVENTS_DIRTY] at: Mon Mar 23 12:02:29 2026
+WRITER_1_*_1> WRT_8168 [2026-03-23 12:02:29.198] End loading table [STG_WATCH_EVENTS_DIRTY] at: Mon Mar 23 12:02:29 2026
+WRITER_1_*_1> WRT_8141 [2026-03-23 12:02:29.199] 
+Commit on end-of-data  Mon Mar 23 12:02:29 2026
+===================================================
+
+WRT_8036 Target: STG_WATCH_EVENTS_DIRTY (Instance Name: [SYSTEM_STG_WATCH_EVENTS_DIRTY])
+WRT_8038 Inserted rows - Requested: 397        Applied: 397        Rejected: 0          Affected: 397       
+
+WRITER_1_*_1> WRT_8035 [2026-03-23 12:02:29.199] Load complete time: Mon Mar 23 12:02:29 2026
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: STG_WATCH_EVENTS_DIRTY (Instance Name: [SYSTEM_STG_WATCH_EVENTS_DIRTY])
+WRT_8038 Inserted rows - Requested: 397        Applied: 397        Rejected: 0          Affected: 397       
+
+
+WRITER_1_*_1> WRT_8043 [2026-03-23 12:02:29.199] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2026-03-23 12:02:29.201] Writer run completed.
+MANAGER> PETL_24031 [2026-03-23 12:02:29.202] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [SYSTEM_STG_WATCH_EVENTS_DIRTY] has completed. The total run time was insufficient for any meaningful statistics.
+
+MANAGER> PETL_24005 [2026-03-23 12:02:29.308] Starting post-session tasks. : (Mon Mar 23 12:02:29 2026)
+POST-SESS> PETL_24091 [2026-03-23 12:02:29.309] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2026-03-23 12:02:29.385] Post-session task completed successfully. : (Mon Mar 23 12:02:29 2026)
+MAPPING> TM_6018 [2026-03-23 12:02:29.385] The session completed with [21] row transformation errors. 
+MANAGER> PETL_24002 [2026-03-23 12:02:29.728] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2026-03-23 12:02:29.790] Session run completed successfully.
+DIRECTOR> TM_6022 [2026-03-23 12:02:29.790] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2026-03-23 12:02:29.790] Source Load Summary.
+DIRECTOR> CMN_1740 [2026-03-23 12:02:29.790] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [418], Affected Rows [418], Applied Rows [418], Rejected Rows [0]
+DIRECTOR> TM_6253 [2026-03-23 12:02:29.790] Target Load Summary.
+DIRECTOR> CMN_1740 [2026-03-23 12:02:29.790] Table: [SYSTEM_STG_WATCH_EVENTS_DIRTY] (Instance Name: [SYSTEM_STG_WATCH_EVENTS_DIRTY] Instance UI Name: [Target])
+	 Output Rows [397], Affected Rows [397], Applied Rows [397], Rejected Rows [0]
+DIRECTOR> TM_6023 [2026-03-23 12:02:29.790] 
+===================================================
+
+DIRECTOR> TM_6020 [2026-03-23 12:02:29.790] Session [s_mtt_0138JL0Z00000000000N] completed at [Mon Mar 23 12:02:29 2026].
