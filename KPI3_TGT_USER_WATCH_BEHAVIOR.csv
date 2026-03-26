@@ -1,0 +1,17 @@
+"MONTH","CATEGORY","USER_ID","USER_NAME","WATCH_TIME"
+"01","Action",1008,"User_1008",1406
+"02","Action",1032,"User_1032",1400
+"01","Comedy",1038,"User_1038",909
+"02","Comedy",1041,"User_1041",1586
+"01","Documentary",1076,"User_1076",1657
+"02","Documentary",1048,"User_1048",1086
+"01","Drama",1085,"User_1085",2129
+"02","Drama",1053,"User_1053",1751
+"01","Horror",1034,"User_1034",224
+"02","Horror",1058,"User_1058",249
+"01","Romance",1103,"User_1103",1535
+"02","Romance",1023,"User_1023",1326
+"01","Sci-Fi",1023,"User_1023",938
+"02","Sci-Fi",1042,"User_1042",1287
+"01","Thriller",1096,"User_1096",1303
+"02","Thriller",1064,"User_1064",1061
